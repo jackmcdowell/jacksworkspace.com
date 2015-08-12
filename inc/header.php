@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="<?php echo BASE_URL; ?>favicon.ico">
 	<script type="text/javascript" src="../js/jwplayer/jwplayer.js"></script>
 	<script type="text/javascript">jwplayer.key="9/GE4VKRyb1m/76h/+ROWGv30FhIKBqMvJjqjsfvPFULMaqHVrmKSMhCuRM=";</script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Add jQuery library -->
 	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
 

@@ -16,7 +16,7 @@ include(ROOT_PATH . 'inc/header.php');
 
   <title>Code</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <div class="section page">

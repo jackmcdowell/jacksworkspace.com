@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^articles/$ /articles/articles.php
+RewriteRule ^articles/([0-9]+)/$ /articles/article.php?id=$1
+RewriteRule ^receipt.php$ /receipt/ [R=301]
+RewriteRule ^contact.php$ /contact/ [R=301]
+RewriteRule ^articles.php$ /articles/ [R=301]
+RewriteRule ^(articles/[0-9]+)$ /$1/ [R=301]
+
+RewriteCond %{QUERY_STRING} ^id=([0-9]+)$
+RewriteRule ^article.php$ /articles/%1/? [R=301]
