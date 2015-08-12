@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 
-  require_once("../inc/config.php");
+  require_once("../../inc/config.php");
 ?>
 
 <?php 
@@ -13,7 +13,7 @@ include(ROOT_PATH . 'inc/header.php');
 <html>
 <head>
 
-  <title>Code</title>
+  <title>Websites</title>
 
 
 </head>
@@ -21,32 +21,26 @@ include(ROOT_PATH . 'inc/header.php');
     <div class="section page">
     <div class="wrapper">
 
-       <h1>Coding Projects</h1>
-    <div class="gallery">
+       <h1>Website Portfolio</h1>
+    <div class="gallery websites">
         <ul>
 		  <li>
-            <a href="<?php echo BASE_URL; ?>code/websites">
-            <img src="<?php echo BASE_URL; ?>img/badge_websites.png" alt="Websites" width="150">
+            <a href="http://versalingua.com">
+            <img src="<?php echo BASE_URL; ?>img/versalingua_capture.png" alt="Versalingua Website" width="250">
             </a>
-            <p>Websites</p>
+            <p>Versalingua Website</p>
           </li>
           <li>
-            <a href="<?php echo BASE_URL; ?>code/lightbox">
-            <img src="<?php echo BASE_URL; ?>img/badge_lbox.png" alt="Light Box" width="150">
+            <a href="http://methexis.org">
+            <img src="<?php echo BASE_URL; ?>img/travel_capture.png" alt="Travel Website" width="250">
             </a>
-            <p>JQuery Lightbox</p>
+            <p>Travel Website</p>
           </li>
           <li>
-            <a href="<?php echo BASE_URL; ?>code/drawing">
-            <img src="<?php echo BASE_URL; ?>img/badge_draw.png" alt="Drawing App" width="150">
+            <a href="http://usahispanicpress.com">
+            <img src="<?php echo BASE_URL; ?>img/usahispanicpress_capture.png" alt="Drawing App" width="250">
             </a>
-            <p>JQuery DrawingBox</p>
-          </li>
-           <li>
-            <a href="<?php echo BASE_URL; ?>code/database">
-            <img src="<?php echo BASE_URL; ?>img/badge_mysql.png" alt="JQuery" width="150">
-            </a>
-            <p>MySQL and PDO example</p>
+            <p>USAHispanicPress</p>
           </li>
          </ul>
          

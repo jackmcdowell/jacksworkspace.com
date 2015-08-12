@@ -71,6 +71,7 @@
 		<li class="code <?php if ($section == "code") { echo "on"; } ?>">
 			<a href="<?php echo BASE_URL; ?>code/codes.php">Portfolio ￬</a>
 			<ul class="hidden">
+				<li><a href="<?php echo BASE_URL; ?>code/websites/">Websites</a></li>
 				<li><a href="<?php echo BASE_URL; ?>code/lightbox/">Lightbox</a></li>
 				<li><a href="<?php echo BASE_URL; ?>code/drawing/">DrawingBox</a></li>
 				<li><a href="<?php echo BASE_URL; ?>code/database/">MySQL</a></li>
