@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-
 <?php
   require_once("../../inc/config.php");
 ?>
-
 <?php 
-$pageTitle = "Drawing";
+$pageTitle = "Drawing Application";
 $section = "code";
 include(ROOT_PATH . 'inc/header.php'); 
 ?>
-<html>
-<head>
-	<title>Simple Drawing Application</title>
-
-</head>
-<body class="drawingbody">
-
     <div class="section page">  
     <div class= "wrapper">
-  
-  <h1>jQuery Drawing Application</h1>
-
+  	<h1>jQuery Drawing Application</h1>
 	<canvas	 width="600" height="400"></canvas>
 	<div class="controls">
 		<ul class="ulControls">
@@ -53,6 +41,4 @@ include(ROOT_PATH . 'inc/header.php');
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>	
-</body>
-  <footer><?php include(ROOT_PATH . 'inc/footer.php') ?></footer>
-</html>
+<?php include(ROOT_PATH . 'inc/footer.php') ?>

@@ -49,23 +49,19 @@
       </script>
 </head>
 <body>
-
 	<div class="header">
-
 		<div class="wrapper">
-     <div style="display:none">
+	    <div style="display:none">
         <div id="movie">                                    
-          <div id="startTheMovie">Loading...</div>                          
+        <div id="startTheMovie">Loading...</div>                          
         </div>
-      </div>
-			<h1 class="branding-title"><a class="fancybox-media" href="#movie" onclick='jwplayer().play()'>Jack's Workspace</a></h1>
-<label for="show-menu" class="show-menu">Navigation</label>
-	<input type="checkbox" id="show-menu" role="button">
-	
+    	</div>
+		<h1 class="branding-title"><a class="fancybox-media" href="#movie" onclick='jwplayer().play()'>Jack's Workspace</a></h1>
+
 <!-- NAV MENU -->
-
+	<label for="show-menu" class="show-menu">Navigation</label>
+	<input type="checkbox" id="show-menu" role="button">
 		<ul class="nav" id="menu">
-
 		<li class="home <?php if ($section == "home") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>">Home</a></li>
 		<li class="articles <?php if ($section == "articles") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>articles/articles.php">Articles</a></li>
 		<li class="code <?php if ($section == "code") { echo "on"; } ?>">
@@ -87,11 +83,7 @@
 		
 			<li class="search <?php if ($section == "search") { echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>search/">Search</a></li>
 	</ul>
-
 <!-- END NAV MENU -->
-
 		</div>
-
 	</div>
-
 <div id="content">

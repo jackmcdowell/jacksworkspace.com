@@ -2,8 +2,8 @@
 
 /*
  * Returns the four most recent products, using the order of the elements in the array
- * @return array a list of the last four products in the array;
- *  the most recent product is the last one in the array
+ * @return   array           a list of the last four products in the array;
+                             the most recent product is the last one in the array
  */
 function get_products_recent() {
     $recent = array();
@@ -23,8 +23,8 @@ function get_products_recent() {
 
 /*
  * Loops through all the products, looking for a search term in the product names
- * @param string $s the search term
- * @return array a list of the products that contain the search term in their name
+ * @param    string    $s    the search term
+ * @return   array           a list of the products that contain the search term in their name
  */
 function get_products_search($s) {
     $results = array();
@@ -40,7 +40,7 @@ function get_products_search($s) {
 
 /*
  * Counts the total number of products
- * @return int the total number of products
+ * @return   int             the total number of products
  */
 function get_products_count() {
     return count(get_products_all());
@@ -48,10 +48,10 @@ function get_products_count() {
 
 /*
  * Returns a specified subset of products, based on the values received,
- * using the order of the elements in the array.
- * @param int the position of the first product in the requested subset 
- * @param int the position of the last product in the requested subset 
- * @return array the list of products that correspond to the start and end positions
+ * using the order of the elements in the array .
+ * @param    int             the position of the first product in the requested subset 
+ * @param    int             the position of the last product in the requested subset 
+ * @return   array           the list of products that correspond to the start and end positions
  */
 function get_products_subset($positionStart, $positionEnd) {
     $subset = array();
@@ -70,7 +70,7 @@ function get_products_subset($positionStart, $positionEnd) {
 /*
  * Returns the full list of products. This function contains the full list of products,
  * and the other model functions first call this function.
- * @return array the full list of products
+ * @return   array           the full list of products
  */
 function get_products_all() {
     $products = array();

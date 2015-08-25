@@ -1,30 +1,15 @@
-<!DOCTYPE html>
 <?php
-
-  require_once("../inc/config.php");
-?>
-
-<?php 
+require_once("../inc/config.php");
 $pageTitle = "My coding projects";
 $section = "code";
 include(ROOT_PATH . 'inc/header.php'); 
 ?>
-
-<html>
-<head>
-
-  <title>Code</title>
-
-
-</head>
-<body>
     <div class="section page">
     <div class="wrapper">
-
-       <h1>Coding Projects</h1>
-    <div class="gallery">
+        <h1>Coding Projects</h1>
+        <div class="gallery">
         <ul>
-		  <li>
+		    <li>
             <a href="<?php echo BASE_URL; ?>code/websites">
             <img src="<?php echo BASE_URL; ?>img/badge_websites.png" alt="Websites" width="150">
             </a>
@@ -53,11 +38,7 @@ include(ROOT_PATH . 'inc/header.php');
 </div>
 </div>
 </div>
-
-
-  </body>
-  <footer><?php include(ROOT_PATH . 'inc/footer.php') ?></footer>
-</html>
+<?php include(ROOT_PATH . 'inc/footer.php') ?>
 
 
 

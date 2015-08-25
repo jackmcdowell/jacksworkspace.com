@@ -131,8 +131,8 @@ include(ROOT_PATH . 'inc/header.php');
 <div class="section" id="Section1">
 	    <div class="slide" id="slide1">
 			<div class="intro">
-				<h1>Résumé</h1>
-				<h2> <a href="https://www.linkedin.com/in/mcdowelljack" src="https://www.linkedin.com/in/mcdowelljack">Linkedin Profile</a></h2>
+				<h1><a href="McDowell.Resume.pdf" target="_blank">Résumé</a></h1>
+				<h2><a href="https://www.linkedin.com/in/mcdowelljack" src="https://www.linkedin.com/in/mcdowelljack">Linkedin Profile</a></h2>
 				<h3>Education</h3>
 				<ul>
 				<li>Certificates in Ruby, PHP, Rails, Web Development, Web Design, Wordpress, Java and Business (Treehouse Inc.: 2015)</li>

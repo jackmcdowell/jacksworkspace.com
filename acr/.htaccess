@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^services/$ /acr/services/services.php
+RewriteRule ^services/([0-9]+)/$ /acr/services/service.php?id=$1
+RewriteRule ^receipt.php$ /receipt/ [R=301]
+RewriteRule ^contact.php$ /contact/ [R=301]
+RewriteRule ^services.php$ /acr/services/ [R=301]
+RewriteRule ^(services/[0-9]+)$ /$1/ [R=301]
+
+RewriteCond %{QUERY_STRING} ^id=([0-9]+)$
+RewriteRule ^service.php$ /acr/services/%1/? [R=301]

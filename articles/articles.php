@@ -37,7 +37,7 @@
 	$products = get_products_subset($start,$end);
 
 ?><?php 
-$pageTitle = "";
+$pageTitle = "Articles";
 $section = "articles";
 include(ROOT_PATH . 'inc/header.php'); ?>
 

@@ -1,17 +1,11 @@
-<!DOCTYPE html>
 <?php
    require_once("../../inc/config.php");
    ?>
 <?php 
-   $pageTitle = "My coding projects";
+   $pageTitle = "Websites";
    $section = "code";
    include(ROOT_PATH . 'inc/header.php'); 
    ?>
-<html>
-   <head>
-      <title>Websites</title>
-   </head>
-   <body>
       <div class="section page">
          <div class="wrapper">
             <h1>Website Portfolio</h1>
@@ -22,6 +16,12 @@
                      <img src="<?php echo BASE_URL; ?>img/versalingua_capture.png" alt="Versalingua Website" width="250">
                      </a>
                      <p>Versalingua Website</p>
+                  </li>
+                  <li>
+                     <a href="http://jacksworkspace.com/acr">
+                     <img src="<?php echo BASE_URL; ?>img/acr_capture.png" alt="ACR Website" width="250">
+                     </a>
+                     <p>ACR Auto Website</p>
                   </li>
                   <li>
                      <a href="http://methexis.org">
@@ -57,6 +57,4 @@
             </div>
          </div>
       </div>
-   </body>
-   <footer><?php include(ROOT_PATH . 'inc/footer.php') ?></footer>
-</html>
+<?php include(ROOT_PATH . 'inc/footer.php') ?>

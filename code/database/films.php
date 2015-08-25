@@ -1,12 +1,8 @@
-
 <?php
 require_once("../../inc/config.php");
-
 require_once('database.php');
-
 if(!empty($_GET['id'])){
 	$film_id = intval($_GET['id']);
-
 	 try { 
 	   $results = $db->prepare('select * from film where film_id = ?');
 	   $results->bindParam(1, $film_id);
@@ -21,31 +17,17 @@ if(!empty($_GET['id'])){
 		die;
 	}
 }
-
 ?>
-
 <?php 
 $pageTitle = "Database";
 $section = "code";
 include(ROOT_PATH . 'inc/header.php'); 
 ?>
 
-<html>
-
-<head>
-
-  <meta charset="UTF-8">
-  <title>PHP Data Objects</title>
-  <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body class="database">
+<!-- <body class="database"> -->
     <div class="section page">  
     <div class= "wrapper">
-
-
-  <h1>Title: <?php
+	<h1>Title: <?php
 	if (isset($film)) {
 		echo $film['title']; 
 	}
@@ -88,7 +70,5 @@ include(ROOT_PATH . 'inc/header.php');
 </div>
 </div>
 
-</body>
-  <footer><?php include(ROOT_PATH . 'inc/footer.php') ?></footer>
-</html>
+<?php include(ROOT_PATH . 'inc/footer.php') ?>
 
