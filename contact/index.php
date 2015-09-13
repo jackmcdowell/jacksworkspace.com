@@ -72,33 +72,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } ?>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
 <?php 
 $pageTitle = "About Page";
 $section = "contact";
 include(ROOT_PATH . 'inc/header.php'); 
 ?>
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>About</title>
-
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-
-	<style>
-
-
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
 	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
-
 	<script type="text/javascript" src="jquery.fullPage.js"></script>
-
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -111,28 +94,21 @@ include(ROOT_PATH . 'inc/header.php');
 		});
 	</script>
 
-</head>
-<body>
-
 <div id="fullpage">
 
 <div class="section" id="Section0">
 		<div class="intro">
-			<h1>About</h1>
+			
 			<img class="profile-photo" src="<?php echo BASE_URL; ?>img/jack.jpg" alt="Profile Picture">
-			<p>I'm Jack McDowell and I coded this website from scratch.</p>
-			<p>I'm currently the Editor in Chief of USA Hispanic Press,</p>
-			<p>but I created this website to showcase some of my coding skills.</p>
+			<p>I'm Jack McDowell and I coded this website from scratch.<br>I'm currently the Editor in Chief of USA Hispanic Press,<br>but I created this website to showcase some of my coding skills.<br>I have worked on a number of websites and am looking for new coding opportunities.</p>
 		</div>
 </div>
-
-
 
 <div class="section" id="Section1">
 	    <div class="slide" id="slide1">
 			<div class="intro">
-				<h1><a href="McDowell.Resume.pdf" target="_blank">Résumé</a></h1>
-				<h2><a href="https://www.linkedin.com/in/mcdowelljack" src="https://www.linkedin.com/in/mcdowelljack">Linkedin Profile</a></h2>
+				<h1><a href="McDowell.Resume.pdf" target="_blank">&#8680;Résumé&#8678;</a></h1>
+				<h2><a href="https://www.linkedin.com/in/mcdowelljack" src="https://www.linkedin.com/in/mcdowelljack">&#8680;Linkedin Profile&#8678;</a></h2>
 				<h3>Education</h3>
 				<ul>
 				<li>Certificates in Ruby, PHP, Rails, Web Development, Web Design, Wordpress, Java and Business (Treehouse Inc.: 2015)</li>
@@ -146,25 +122,19 @@ include(ROOT_PATH . 'inc/header.php');
 				<li>Graduate Teaching Fellow: University of Oregon (2008-2013)</li>
 				<li>IT Consultant: The International Baccalaureate (2007-2011)</li>
 				</ul>
-				
 			</div>
 		</div>
 </div>
 
-
 <div class="section" id="Section2">
 	    <div class="slide" id="slide1">
 			<div class="intro">
-		
-		<h1>Contact</h1>
-				
-          <ul class="contact-info">
-          <li class="phone"><a href="tel:646-642-3521">646-642-3521</a></li>
-          <li class="mail"><a href="mailto:jackmcdowell@gmail.com">jackmcdowell@gmail.com</a></li>
-          <li class="facebook"><a href="http://facebook.com/jackmc83">Facebook</a></li>   
-
-     	   </ul>
-     
+								
+    <ul class="contact-info">
+        <li class="phone"><a href="tel:646-642-3521">646-642-3521</a></li>
+        <li class="mail"><a href="mailto:jackmcdowell@gmail.com">jackmcdowell@gmail.com</a></li>
+        <li class="facebook"><a href="http://facebook.com/jackmc83">Facebook</a></li>   
+   	</ul>
 
             <?php // if status=thanks in the query string, display an thank you message instead of the form ?>
             <?php if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { 
@@ -183,7 +153,6 @@ include(ROOT_PATH . 'inc/header.php');
                 ?>
 
                 <form method="post" action="<?php echo BASE_URL; ?>contact/">
-
                     <table>
                         <tr>
                             <th>
@@ -222,26 +191,9 @@ include(ROOT_PATH . 'inc/header.php');
                         </tr>                   
                     </table>
                     <input type="submit" value="Send">
-
                 </form>
-
             <?php } ?>
-
         </div>
-
     </div>
-    </div>
-
-
-			</div>
-		</div>
-		
-
 </div>
 </div>
-		
-
-
-
-</body>
-</html>

@@ -5,7 +5,7 @@ ini_set('display_errors', 'On');
 
 try {
 //    $db = new PDO('mysql:host=localhost;dbname=sakila-schema.sql', 'root');
-    $db = new PDO('mysql:host=localhost;dbname=jackxxxx_sakila', 'jackxxxx_sakila', 'xxxxxxxx');
+    $db = new PDO('mysql:host=localhost;dbname=jackmc83_sakila', 'jackmc83_sakila', '41634163');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
 } catch(Exception $e) {

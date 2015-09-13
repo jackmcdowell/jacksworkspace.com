@@ -1,0 +1,2 @@
+[03-Sep-2015 17:37:33 America/Chicago] PHP Warning:  require_once(../inc/config.php): failed to open stream: No such file or directory in /home4/jackmc83/public_html/jacksworkspace.com/code/domaincrawler/index.php on line 3
+[03-Sep-2015 17:37:33 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../inc/config.php' (include_path='.:/opt/php54/lib/php') in /home4/jackmc83/public_html/jacksworkspace.com/code/domaincrawler/index.php on line 3

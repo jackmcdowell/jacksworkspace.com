@@ -9,6 +9,8 @@ include(ROOT_PATH . 'inc/header.php');
     <div class="section page">  
     <div class= "wrapper">
   	<h1>jQuery Drawing Application</h1>
+	<p>This program allows one to draw on a canvas<br>If you would like to know more, the code is available on <a style="text-decoration:underline" href="https://github.com/jackmcdowell/JQueryDrawingApplication" target="_blank">GitHub</a></p>
+
 	<canvas	 width="600" height="400"></canvas>
 	<div class="controls">
 		<ul class="ulControls">

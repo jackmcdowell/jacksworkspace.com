@@ -43,11 +43,14 @@ body {
     margin: 0;
     min-height: 100%;
 }
+a:{
+    color: FFF;
+}
 a:focus {
     outline: thin dotted;
 }
-a:active,
-a:hover {
+a:hover, a:active
+ {
     outline: 0;
     color: FFF;
 }
@@ -536,6 +539,56 @@ Search CSS
     vertical-align: top;
     width: auto;
 }
+
+/******************************************************************
+Database CSS
+******************************************************************/
+
+.database ol {
+  list-style-type: none;
+  margin: 0 0 40px 0;
+}
+
+.databaselist {
+  padding: 8px 0;
+  display: list-item;
+  width: 100%;
+  margin: 0;
+  list-style-type: decimal;
+  counter-increment: step-counter;
+  text-align: left;
+  padding-left: 15;
+  color: #FFF;
+}
+
+.database ol li::before {
+    content: counter(step-counter);
+    font-size: .65em;
+    color: #fff;
+    font-weight: 300;
+    padding: 2px 6px;
+    margin:  0 18px 0 0;
+    border-radius: 3px;
+    background:#8d9aa5;
+    line-height: 1em;
+}
+
+.databaselist a, .databaselist a:hover, .databaselist a:visited, .databaselist a:active {
+  color: #fff;
+}
+
+.lens {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #8d9aa5;
+  border-radius: 5px;
+  position: absolute;
+  margin: 5px 0 0 -19px;
+}
+
 /******************************************************************
 Pagination CSS
 ******************************************************************/
@@ -1156,7 +1209,9 @@ Section banner: Crater Lake Picture
 /******************************************************************
 Section CSS
 ******************************************************************/
-    
+    .section a, .section a:hover, .section a:visited, .section a:active {
+  color: #fff;
+}
     .section.page h1 {
         font-size: 24px;
     }
@@ -1193,6 +1248,11 @@ Section CSS
     .section.articles ul.products li a {
         height: 240px;
     }
+
+    .section.articles ul.projects li a {
+        height: auto;
+    }
+
     .section.articles ul.products li img {
         width: 190px;
     }
@@ -1257,135 +1317,7 @@ Lightbox for image gallery
     #imageGallery img {
         width: 150px;
     }
-/******************************************************************
-Drawing app
-******************************************************************/
-/*    
-    canvas {
-        background: url(../../img/drawing.jpg);
-        border-radius: 5px;
-        box-shadow: 0 4px 0 0 #FFF;
-        cursor: url(../../img/cursor.png), crosshair;
-        display: block;
-        margin: 50px auto 10px;
-    }
-    .controls {
-        border-radius: 5px;
-        margin: 0 auto;
-        min-height: 60px;
-        overflow: hidden;
-        width: 600px;
-    }
-    .ulControls {
-        float: left;
-        list-style: none;
-        margin: 0;
-        padding: 10px 0 20px;
-        text-align: center;
-        width: 100%;
-    }
-    .ulControls li,
-    #newColor {
-        border-radius: 60px;
-        box-shadow: 0 3px 0 0 #222;
-        cursor: pointer;
-        display: block;
-        height: 54px;
-        width: 54px;
-    }
-    .ulControls li {
-        display: inline-block;
-        margin: 0 5px 10px;
-    }
-    .red {
-        background: #fc4c4f;
-    }
-    .blue {
-        background: #4fa3fc;
-    }
-    .yellow {
-        background: #ECD13F;
-    }
-    .selected {
-        border: 4px solid #222;
-        height: 40px;
-        width: 40px;
-    }
-    button {
-        background: #68B25B;
-        box-shadow: 0 3px 0 0 #6A845F;
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        font-size: 16px;
-        line-height: 40px;
-        outline: none;
-        text-shadow: 0 1px #6A845F;
-    }
-    #revealColorSelect {
-        border: none;
-        border-radius: 5px;
-        margin: 10px auto;
-        padding: 5px 20px;
-        width: 160px;
-    }
-    #colorSelect {
-        background: #fff;
-        border-radius: 5px;
-        clear: both;
-        display: none;
-        margin: 20px auto 0;
-        padding: 10px;
-        position: relative;
-        width: 305px;
-    }
-    #colorSelect:after {
-        border: solid transparent;
-        border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #fff;
-        border-width: 10px;
-        bottom: 100%;
-        content: " ";
-        height: 0;
-        left: 50%;
-        margin-left: -10px;
-        pointer-events: none;
-        position: absolute;
-        width: 0;
-    }
-    #newColor {
-        border: none;
-        border-radius: 3px;
-        box-shadow: none;
-        float: left;
-        height: 80px;
-        margin: 10px 20px 20px 10px;
-        width: 80px;
-    }
-    .sliders p {
-        margin: 8px 0;
-        vertical-align: middle;
-    }
-    .sliders label {
-        color: #6D574E;
-        display: inline-block;
-        font-size: 14px;
-        margin: 0 10px 0 0;
-        width: 35px;
-    }
-    .sliders input {
-        position: relative;
-        top: 2px;
-    }
-    #colorSelect button {
-        border: none;
-        border-radius: 0 0 5px 5px;
-        border-top: 1px solid #6A845F;
-        clear: both;
-        margin: 10px -10px -7px;
-        padding: 5px 10px;
-        width: 325px;
-    }
-}*/
+
 /******************************************************************
 RESPONSIVE BIG Header CSS
 ******************************************************************/

@@ -17,6 +17,8 @@ include(ROOT_PATH . 'inc/header.php');
     <div class="section page">  
     <div class= "wrapper">
     <h1>MySQL and PDO database</h1>
+    <p>This page utilizes PDO to connect to a MySQL database and displays the results in a list,<br>
+    the hyperlinks are populated automatically and the subpages are also constructed from the database</p>
     <h2>Film menu:
     <select name="forma" onchange="location = this.options[this.selectedIndex].value;"> 
 <?php 
